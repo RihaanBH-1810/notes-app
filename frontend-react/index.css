@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("assets/bg2.jpg");
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.containor{
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 100vh;
+}
+
+.notes-l{
+  display: grid;
+  grid-gap: 1rem; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
+}
+
+.note.new{
+  background-color: aquamarine;
+}
+
+.note.new textarea{
+  border: none;
+  resize: none;
+  background-color: aquamarine;
+}
+
+.dark-mode .note.new textarea{
+  border: none;
+  resize: none;
+  background-color: #fffffe;
+}
+
+.dark-mode .note  textarea{
+  border: none;
+  resize: none;
+  background-color: #00ddff;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.note textarea{
+  background-color: #fef68a;
+  border: none;
+  resize: none;
+}
+
+.note .due-date{
+  border: none;
+  background-color: #fef68a;
+}
+
+.tbtn{
+  transform: scale(2);
+  background-color: azure;
+  border: none;
+  border-radius: 15px;
+  padding: auto;
+  align-content: center;
+  max-width: 100px;  
+  max-height: 35px;
+}
+
+.btn{
+  background-color: azure;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  align-content: center;
+    
+}
+
+.tbtn:hover{
+  cursor: pointer;
+  background-color: #8ae1fe;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color:whitesmoke  
+}
+
+.note{
+  background-color : #fef68a;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+  text-wrap: balance;
+  transition: transform 0.5s;
+}
+
+.dark-mode .dead-note{
+  background-color : rgb(179, 62, 8);
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+  text-wrap: balance;
+  transition: transform 0.5s;
+}
+
+.dead-note{
+  background-color : rgb(236, 79, 6);
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+  text-wrap: balance;
+  transition: transform 0.5s;
+}
+
+.dead-note:hover{
+  transform: scale(1.05);
+  box-shadow: #fef68a;
+  }
+
+.note:hover{
+  transform: scale(1.05);
+  box-shadow: #fef68a;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+.delete-icon{
+  transform: scale(1.25);
+}
+.delete-icon:hover{
+  cursor: pointer;
+  transform: scale(1.6);
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.search  input {
+  border: none;
+  background-color: white;
+}
+
+.search input:focus{
+  outline: none;
+}
+
+.search-icon{
+  text-decoration: none;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark-mode{
+  background-color: black;
+  background-image: url("assets/bg.jpg");
+  background-size: cover;
+}
+
+.dark-mode h1{
+  color: white;  
+}
+
+.dark-mode .note {
+  background-color : #00ddff;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+  text-wrap: balance;
+  transition: transform 0.5s;
+}
+
+.dark-mode .note.new {
+  background-color : #fffffe;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+  text-wrap: balance;
+  transition: transform 0.5s;
+}
+
+.dark-mode .due-date{
+  border: none;
+  background-color: #fffffe;
+}
+
+.dark-mode textarea{
+  background-color: #fffffe;
+}
+
+.note.new .due-date{
+  border: none;
+  background-color: aquamarine;
+}
+
+.dark-mode .note .due-date{
+  border: none;
+  background-color: #00ddff;
+}
+
+.dark-mode .note.new .due-date{
+  border: none;
+  background-color: #fffffe;
+}
+
+.due-date:focus{
+  outline: none;
+}
+
+.title{
+  border: none;
+  padding-bottom: 8px;
+  background-color: aquamarine;
+}
+
+.dark-mode .title{
+  border: none;
+  padding-bottom: 8px;
+  background-color: white;
+}
+
+.title:focus{
+  outline: none;
+}
